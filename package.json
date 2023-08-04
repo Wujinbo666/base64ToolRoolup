@@ -1,0 +1,19 @@
+{
+  "name": "rolluppackage",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "rollup.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

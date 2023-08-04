@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 1000px;
+      height: 600px;
+      margin: 0 auto;
+      background-color: pink;
+      overflow: hidden;
+    }
+    .top {
+      height: 200px;
+      width: 100%;
+      display: flex;
+    }
+    .btnGroup {
+      background-color: skyblue;
+      width: 200px;
+      height: 100%; 
+      display: flex;
+      flex-direction: column;
+    }
+    .iptFile {
+      display: none;
+    }
+    .btnUpload {
+      margin-bottom: 10px;
+    }
+    .btnUpload , .btnCreate {
+      cursor: pointer;
+      height: 35px;
+    }
+    .btnCreate {
+      background-color: green;
+    }
+    .img {
+      flex: 1;
+      background-color: red;
+      margin-left: 20px;
+    }
+    .realImg {
+      width: 400px;
+    }
+    .buttom {
+      height: 400px;
+      width: 1000px;
+    }
+    .inputTxtarea {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="btnGroup">
+        <input class="iptFile" id="ipt_file" type="file">
+        <button class="btnUpload" id="btn_upload">选择上传文件</button>
+        <button class="btnCreate" id="btn_create">生成</button>
+        <button class="btnBlob2Base64" id="btn_blob2_base64">二进制生成base64</button>
+      </div>
+      <div class="img">
+        <img id="o_img" class="realImg" src="" alt="">
+      </div>
+    </div>
+    <div id="buttom" class="buttom">
+      <input class="inputTxtarea" id="ipt_txtarea" type="textarea">
+    </div>
+  </div>
+  <script src="./bundle.js"></script>
+</body>
+</html>
